@@ -13,6 +13,18 @@ body {
     width: 100%;
 }
 
+h6 {
+    color: white;
+    font-size: 21px;
+    font-weight: 300;  
+}
+
+h2 {
+    color: white;
+    font-size: 76px;
+    font-weight: 700;
+}
+
 .img {
     display: flex;
     align-items: center;
@@ -24,7 +36,7 @@ body {
     display: flex;
 }
 
-.container {
+.nav-barclass {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,6 +47,12 @@ body {
     margin-top: 50px;
     margin-left: 300px;
     width: 70%;
+}
+
+.container {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 300px;
 }
 
 ul a {
