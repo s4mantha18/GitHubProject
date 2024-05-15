@@ -15,7 +15,7 @@ body {
 
 h6 {
     color: white;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 300;  
 }
 
@@ -23,6 +23,34 @@ h2 {
     color: white;
     font-size: 76px;
     font-weight: 700;
+    padding-top: 20px;
+}
+
+p {
+    color: white;
+    width: 40%;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-top: 30px;
+}
+
+.btn {
+    display: flex;
+    background-color: #f42f2c;
+    color: white;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 50px;
+    width: 250px;
+    height: 60px;
+    font-size: 18px;
+}
+
+.btn:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: rgba(44, 44, 44, 0.942);
+    color: white;
 }
 
 .img {
@@ -73,4 +101,43 @@ ul a:hover {
 
 li {
     list-style-type: none;
+}
+
+/* Mobile screen styles */
+@media (max-width: 768px) {
+    body {
+        background-size: auto; /* Adjust background size for better visibility on small screens */
+    }
+
+    h2 {
+        font-size: 48px; /* Decrease heading size for better fit */
+    }
+
+    p {
+        width: 80%; /* Increase paragraph width for better readability */
+    }
+
+    .container {
+        flex-direction: column; /* Stack items vertically for better layout on small screens */
+        margin-left: 0; /* Remove left margin */
+        width: 100%;
+    }
+
+    .nav-barclass {
+        margin-left: 0; /* Adjust margin for better positioning */
+        width: 100%; /* Occupy full width */
+        
+    }
+}
+
+/* Tablet screen styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    h2 {
+        font-size: 60px; /* Adjust heading size for tablet screens */
+    }
+
+    .container {
+        margin-left: 100px; /* Adjust margin for better positioning */
+        width: 100%;
+    }
 }
